@@ -1,4 +1,5 @@
 <%= form_with model: @user do |form| %>
+  <%= hidden_field_tag(:_method, :patch) %>
   <%= form.label :username, 'Username:' %>
   <%= form.text_field :username %>
   <%= form.label :email, 'Email:' %>
